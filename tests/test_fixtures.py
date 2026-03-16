@@ -4,11 +4,11 @@ import pytest
 def send_analytics_data():
     print('[AUTOUSE] Отправляем данные в сервис аналитики')
 
-@pytest.fixture(scope='Session')
+@pytest.fixture(scope='session')
 def settings():
     print('[SESSION] Инициализируем настройки автотестов')
 
-@pytest.fixture(scope='Class')
+@pytest.fixture(scope='class')
 def user():
     print('[CLASS] Создаем данные пользователя один раз на тестовый класс')
 
