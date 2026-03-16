@@ -29,4 +29,3 @@ with sync_playwright() as playwright:
         page.keyboard.press(char)
 
     expect(registration_button).to_be_enabled()
-

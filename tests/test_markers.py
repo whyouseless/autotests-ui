@@ -1,12 +1,15 @@
 import pytest
 
+
 @pytest.mark.smoke
 def test_smoke_case():
     ...
 
+
 @pytest.mark.regression
 def test_regression_case():
     ...
+
 
 @pytest.mark.smoke
 class TestSuite:
@@ -15,6 +18,7 @@ class TestSuite:
 
     def test_case2(self):
         ...
+
 
 @pytest.mark.regression
 class TestUserAuthentication:
@@ -28,6 +32,7 @@ class TestUserAuthentication:
 
     def test_logout(self):
         ...
+
 
 @pytest.mark.ui
 class TestUserInterface:

@@ -1,6 +1,7 @@
 import pytest
 from playwright.sync_api import sync_playwright, expect
 
+
 @pytest.mark.courses
 @pytest.mark.regression
 def test_empty_courses_list():
@@ -42,5 +43,5 @@ def test_empty_courses_list():
         expect(courses_list_empty_icon).to_be_visible()
 
         courses_list_empty_description = page.get_by_test_id('courses-list-empty-view-description-text')
-        expect(courses_list_empty_description).to_have_text('Results from the load test pipeline will be displayed here')
-
+        expect(courses_list_empty_description).to_have_text(
+            'Results from the load test pipeline will be displayed here')
